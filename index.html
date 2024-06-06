@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portofolio Haikal</title>
+        <link rel="stylesheet" href="assets/css/tailwind.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"
+            integrity="sha512-7x3zila4t2qNycrtZ31HO0NnJr8kg2VI67YLoRSyi9hGhRN66FHYWr7Axa9Y1J9tGYHVBPqIjSE1ogHrJTz51g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            defer
+            src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+        <style>
+            img.rounded-corners { border-radius: 30px; }
+        </style>
+    </head>
+
+    <body>
+        <section class="py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <nav
+                    class="flex-wrap lg:flex items-center justify-between mb-24 xl:mb-48"
+                    x-data="{navbarOpen:false}"
+                >
+                    <div class="flex items-center mb-10 lg:mb-0">
+                        <img src="assets/image/smkn4.png" alt="Logo" height="85" width="85">
+
+                        <button
+                            class="w-10 h-10 lg:hidden ml-auto flex items-center justify-center text-indigo-800 border border-indigo-800 rounded-md"
+                            @click="navbarOpen = !navbarOpen"
+                        >
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+
+                    <ul
+                        class="lg:flex flex-col lg:flex-row lg:items-center lg:space-x-20 mb-10 xl:mb-0"
+                        :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
+                    >
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0"
+                        >
+                            <a href="#">Pengalaman</a>
+                        </li>
+                        <li
+                            class="font-medium text-gray-500 text-lg hover:text-gray-400 transiton ease-in-out duration-300 mb-5 lg:mb-0"
+                        >
+                            <a href="#">Projek</a>
+                        </li>
+                        <li
+                            class="px-8 py-3 font-medium text-indigo-800 text-lg text-center border-2 border-indigo-800 rounded-md hover:bg-indigo-800 hover:text-white transiton ease-linear duration-300"
+                        >
+                            <a href="https://drive.google.com/file/d/1Wi9GQ0L6-ZLKts0IZgWC0L1IJks-mbdE/view">Download CV</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <header
+                    class="flex flex-col lg:flex-row justify-between lg:mb-20"
+                >
+                    <div class="text-center lg:text-left mb-20 lg:mb-0">
+                        <div
+                            class="flex items-center justify-center lg:justify-start gap-2 mb-10"
+                        >
+                            <span class="w-20 h-0.5 bg-indigo-700"></span>
+
+                            <p class="font-medium text-indigo-700 text-xl">
+                                Haikal Muhammad Anhar
+                            </p>
+                        </div>
+
+                        <h1
+                            class="font-bold text-gray-800 text-4xl md:text-6xl xl:text-7xl mb-10"
+                        >
+                            Network
+                        </h1>
+
+                        <p
+                            class="font-normal text-gray-500 text-sm md:text-md xl:text-lg mb-10"
+                        >
+                            Hi, nama saya adalah Haikal Muhammad Anhar
+                            ,saya adalah seoarang <br />
+                            yang antusias terhadap Teknologi
+                        </p>
+
+                        <div class="space-y-5 lg:space-x-5 mb-10">
+                            <a
+                                href="https://wa.me/6282126250273"
+                                class="block md:inline px-8 py-3 font-medium bg-indigo-800 text-white text-lg rounded-md hover:bg-indigo-600 transiton ease-in-out duration-300"
+                                >Kontak saya</a
+                            >
+                        </div>
+
+                        <hr class="text-gray-500 mb-5" />
+
+                    </div>
+
+                    <div class="img.rounded-corners" >
+                        <img src="assets/image/WhatsApp Image 2024-06-05 at 09.49.46_7e65d10b.jpg" alt="Image" height="400" width="400" class="rounded-corners">
+                    </div>
+                </header>
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <section class="py-16 lg:mb-20">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <h1
+                    class="font-semibold text-gray-800 text-2xl md:text-3xl xl:text-5xl text-center leading-tight mb-20 xl:mb-40"
+                >
+                    Beberapa 
+                    <span class="text-indigo-800"
+                        >projek</span
+                    > yang sudah saya kerjakan
+                </h1>
+
+                <div class="flex flex-col xl:flex-row gap-16">
+                    <div class="mx-auto xl:mx-0">
+                        <img src="assets/image/businessman-or-office-worker-working-with-laptop-computer-sitting-inside-the-box-presenting-to-introvert-man-concept-vector.jpg" alt="Image" class="rounded-corners"/>
+                    </div>
+
+                    <div
+                        class="grid grid-cols-2 text-center xl:text-left xl:gap-x-24 mt-10"
+                    >
+                        <div class="mb-16 xl:mb-0">
+                            <h4
+                                class="font-semibold text-gray-800 text-md md:text-lg mb-5"
+                            >
+                                Portofolio
+                            </h4>
+
+                            <p
+                                class="font-normal text-gray-500 text-xs md:text-sm mb-5"
+                            >
+                                Portofolio pertama saya
+                            </p>
+
+                            <a
+                                href="xkeara.github.io/portofolio"
+                                class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300"
+                            >
+                                See Works
+                                <i data-feather="arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="mb-16 xl:mb-0">
+                           
+                        </div>
+
+                        <div class="mb-16 xl:mb-0">
+                            <h4
+                                class="font-semibold text-gray-800 text-md md:text-lg mb-5"
+                            >
+                                Website Biodata
+                            </h4>
+
+                            <p
+                                class="font-normal text-gray-500 text-xs md:text-sm mb-5"
+                            >
+                               Website pertama yang saya buat <br>
+                               menggunakan Template
+                            </p>
+
+                            <a
+                                href="xkeara.github.io/biodata/biodata2.html"
+                                class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300"
+                            >
+                                See Works
+                                <i data-feather="arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="mb-16 xl:mb-0">
+                            
+                        </div>
+
+                        <div>
+                            <h4
+                                class="font-semibold text-gray-800 text-md md:text-lg mb-5"
+                            >
+                                Website jasa membuat gambar pixel
+                            </h4>
+
+                            <p
+                                class="font-normal text-gray-500 text-xs md:text-sm mb-5"
+                            >
+                                Website jasa saya yang bernama "Grapixel" kami menyediakan jasa membuat gambar pixel
+                            </p>
+
+                            <a
+                                href="#"
+                                class="flex items-center justify-center xl:justify-start gap-3 font-medium text-indigo-800 text-md hover:text-indigo-600 transition ease-in-out duration-300"
+                            >
+                                See Works
+                                <i data-feather="arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <section class="py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <h1
+                    class="font-semibold text-gray-800 text-center text-xl md:text-3xl xl:text-5xl leading-tight mb-10 md:mb-20 xl:mb-40"
+                >
+                    Beberapa foto projek saya
+                </h1>
+
+                <div
+                    class="flex justify-center space-x-2 md:space-x-5 xl:space-x-8 mb-2 md:mb-5 xl:mb-8"
+                >
+                    <div class="space-y-2 md:space-y-5 xl:space-y-8">
+                        <img
+                            src="assets/image/Screenshot 2024-06-05 111020.png"
+                            alt="Image"
+                            class="hover:opacity-75 transition ease-in-out duration-300 rounded-corners"
+                            width="630"
+                            />
+
+                        <img
+                            src="assets/image/Screenshot 2024-06-06 124255.png"
+                            alt="Image"
+                            class="hover:opacity-75 transition ease-in-out duration-300 rounded-corners"
+                            width="630"
+                        />
+                    </div>
+
+                    <div>
+                       <a href="xkeara.github.io/biodata/biodata2.html"> 
+                        <img
+                            src="assets/image/Screenshot 2024-06-06 122944.png "
+                            alt="Image"
+                            class="hover:opacity-75 transition ease-in-out duration-300 rounded-corners"
+                        />
+                    </a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <section class="py-8 md:py-16">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+                    <div class="text-center mb-10 xl:mb-0">
+                        <div class="flex items-center justify-center">
+                            <div
+                                class="w-24 py-9 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10"
+                            >
+                                <i data-feather="wifi"></i>
+                            </div>
+                        </div>
+
+                        <h2
+                            class="font-semibold text-gray-700 text-xl md:text-3xl mb-5"
+                        >
+                            Rekayasa Jaringan
+                        </h2>
+
+                        <p class="font-normal text-gray-400 text-sm md:text-lg">
+                            Server,Web,Apache2,PHP,Mailserver,Roundcube,Cacti.
+                        </p>
+                    </div>
+
+                    <div class="text-center mb-10 md:mb-0">
+                        <div class="flex items-center justify-center">
+                            <div
+                                class="w-24 py-9 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10"
+                            >
+                                <i data-feather="layout"></i>
+                            </div>
+                        </div>
+
+                        <h2
+                            class="font-semibold text-gray-700 text-xl md:text-3xl mb-5"
+                        >
+                            Pengembangan Web
+                        </h2>
+
+                        <p class="font-normal text-gray-400 text-sm md:text-lg">
+                            Static Web, CSS.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="flex items-center justify-center">
+                            <div
+                                class="w-24 py-9 flex justify-center bg-indigo-50 text-indigo-500 rounded-md mb-5 md:mb-10"
+                            >
+                                <i data-feather="code"></i>
+                            </div>
+                        </div>
+
+                        <h2
+                            class="font-semibold text-gray-700 text-xl md:text-3xl mb-5"
+                        >
+                            Pemrograman
+                        </h2>
+
+                        <p class="font-normal text-gray-400 text-sm md:text-lg">
+                           HTML, Java Script, C++, C.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- container.// -->
+        </section>
+
+        <section class="py-16 lg:mb-20">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <h1
+                    class="font-semibold text-gray-800 text-5xl text-center mb-20 xl:mb-40"
+                >
+                    Pengalaman
+                </h1>
+
+                <div
+                    class="flex flex-col md:flex-row text-center md:text-left md:justify-between"
+                >
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                        <h6
+                            class="font-medium text-gray-500 text-base uppercase"
+                        >
+                            Kegiatan
+                        </h6>
+
+                        <p class="font-semibold text-gray-600 text-base">
+                            Membuat Voucher Wifi
+                        </p>
+
+                        <p class="font-semibold text-gray-600 text-base">
+                            Cisco
+                            
+                        </p>
+
+                        <p class="font-semibold text-gray-600 text-base">
+                            Splicing
+                            
+                        </p>
+
+                        <p class="font-semibold text-gray-600 text-base">
+                            Membuat Website
+                            
+                        </p>
+
+                        <p class="font-semibold text-gray-600 text-base">
+                            Linux
+                            
+                        </p>
+
+                        <p class="font-semibold text-gray-600 text-base">
+                            Basic C++
+                            
+                        </p>
+                    </div>
+
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                        <h6
+                            class="font-medium text-gray-500 text-base uppercase"
+                        >
+                            Media
+                        </h6>
+
+                        <p class="font-normal text-gray-500 text-base">
+                            Winbox
+                        </p>
+
+                        <p class="font-normal text-gray-500 text-base">
+                            Cisco Packet Tracer
+                        </p>
+
+                        <p class="font-normal text-gray-500 text-base">
+                            Fusion Splicer
+                        </p>
+
+                        <p class="font-normal text-gray-500 text-base">
+                            Visual Studio Code
+                        </p>
+
+                        <p class="font-normal text-gray-500 text-base">
+                            Workstation
+                        </p>
+
+                        <p class="font-normal text-gray-500 text-base">
+                            Code Blocks
+                        </p>
+                    </div>
+
+                    <div class="space-y-8 md:space-y-16 mb-16 md:mb-0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-red-50 py-16 mb-10">
+            <div class="container max-w-screen-xl mx-auto px-4">
+                <div class="text-center">
+                    <h1
+                        class="font-medium text-gray-700 text-2xl md:text-5xl mb-5"
+                    >
+                        Kontak saya
+                    </h1>
+
+                    <p
+                        class="font-normal text-gray-400 text-sm md:text-lg mb-20"
+                    >
+                        kontaklah saya jika butuh bantuan
+                    </p>
+
+                    <div
+                        class="flex items-center justify-center space-x-4 md:space-x-8"
+                    >
+                        <a
+                            href="#"
+                            class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300"
+                        >
+                            <i
+                                data-feather="twitter"
+                                class="text-gray-500 hover:text-white transition ease-in-out duration-500"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://wa.me/6282126250273"
+                            class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300"
+                        >
+                            <i
+                                data-feather="phone-call"
+                                class="text-gray-500 hover:text-white transition ease-in-out duration-500"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100073297550823&mibextid=ZbWKwL"
+                            class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300"
+                        >
+                            <i
+                                data-feather="facebook"
+                                class="text-gray-500 hover:text-white transition ease-in-out duration-500"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300"
+                        >
+                            <i
+                                data-feather="at-sign"
+                                class="text-gray-500 hover:text-white transition ease-in-out duration-500"
+                            ></i>
+                        </a>
+
+                        <a
+                            href="https://www.instagram.com/haikalmanh?igsh=YjQ0cGtjN21yMjd1"
+                            class="w-16 h-16 flex items-center justify-center rounded-full hover:bg-red-200 transition ease-in-out duration-300"
+                        >
+                            <i
+                                data-feather="instagram"
+                                class="text-gray-500 hover:text-white transition ease-in-out duration-500"
+                            ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            feather.replace();
+        </script>
+    </body>
+</html>
